@@ -10,6 +10,7 @@
   <link rel="icon" href="./assets/app-icon.png">
   <link rel="preload" href="./assets/AlimamaFangYuanTiVF-Thin.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="./assets/styles.css">
+  <script defer src="./assets/icon-carousel.js"></script>
 </head>
 <body class="home-page">
   <a class="skip" href="#content">跳到正文</a>
@@ -25,8 +26,31 @@
     <section class="hero aurora" aria-labelledby="hero-title">
       <div class="stage hero-layout">
         <div class="hero-copy">
-          <div class="hero-identity"><img class="hero-icon" src="./assets/app-icon.png" width="120" height="120" alt="">PawTale</div>
-          <h1 id="hero-title">照顾好每一天，<br>记下每一步成长。</h1>
+          <div class="hero-branding" data-icon-carousel>
+            <div class="hero-identity">
+              <div class="icon-slides">
+                <img class="hero-icon" src="./assets/app-icon.png" width="160" height="160" alt="Kiwi绿" data-icon-slide>
+                <img class="hero-icon" src="./assets/icons/cream-white.png" width="160" height="160" alt="奶油白" data-icon-slide hidden>
+                <img class="hero-icon" src="./assets/icons/doodle.png" width="160" height="160" alt="乱涂涂" data-icon-slide hidden>
+                <img class="hero-icon" src="./assets/icons/gold-shimmer.png" width="160" height="160" alt="金闪闪" data-icon-slide hidden>
+                <img class="hero-icon" src="./assets/icons/dot-print.png" width="160" height="160" alt="网点点" data-icon-slide hidden>
+                <img class="hero-icon" src="./assets/icons/mosaic.svg" width="160" height="160" alt="方块块" data-icon-slide hidden>
+              </div>
+              <div class="hero-wordmark">
+                <h1 id="hero-title">PawTale</h1>
+                <p class="hero-slogan" lang="en">Keep it &amp; Watch it</p>
+              </div>
+            </div>
+            <div class="icon-controls" role="group" aria-label="App 图标" hidden>
+              <button class="icon-pick" type="button" aria-label="显示Kiwi绿图标" data-icon-pick="0" aria-current="true"></button>
+              <button class="icon-pick" type="button" aria-label="显示奶油白图标" data-icon-pick="1"></button>
+              <button class="icon-pick" type="button" aria-label="显示乱涂涂图标" data-icon-pick="2"></button>
+              <button class="icon-pick" type="button" aria-label="显示金闪闪图标" data-icon-pick="3"></button>
+              <button class="icon-pick" type="button" aria-label="显示网点点图标" data-icon-pick="4"></button>
+              <button class="icon-pick" type="button" aria-label="显示方块块图标" data-icon-pick="5"></button>
+              <button class="icon-toggle" type="button" data-icon-toggle data-pause="暂停轮播" data-play="播放轮播">暂停轮播</button>
+            </div>
+          </div>
           <p class="intro">为每只宠物安排照护、追踪健康，也把平凡日子里的照片和回忆好好收在一起。</p>
           <div class="hero-actions"><a class="button" href="#care">探索核心功能</a><span>即将在 App Store 上架</span></div>
         </div>

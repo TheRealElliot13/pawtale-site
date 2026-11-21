@@ -10,6 +10,7 @@
   <link rel="icon" href="../assets/app-icon.png">
   <link rel="preload" href="../assets/AlimamaFangYuanTiVF-Thin.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../assets/styles.css">
+  <script defer src="../assets/icon-carousel.js"></script>
 </head>
 <body class="home-page">
   <a class="skip" href="#content">Skip to content</a>
@@ -25,8 +26,31 @@
     <section class="hero aurora" aria-labelledby="hero-title">
       <div class="stage hero-layout">
         <div class="hero-copy">
-          <div class="hero-identity"><img class="hero-icon" src="../assets/app-icon.png" width="120" height="120" alt="">PawTale</div>
-          <h1 id="hero-title">Care every day.<br>Keep the memories.</h1>
+          <div class="hero-branding" data-icon-carousel>
+            <div class="hero-identity">
+              <div class="icon-slides">
+                <img class="hero-icon" src="../assets/app-icon.png" width="160" height="160" alt="Kiwi Green" data-icon-slide>
+                <img class="hero-icon" src="../assets/icons/cream-white.png" width="160" height="160" alt="Cream White" data-icon-slide hidden>
+                <img class="hero-icon" src="../assets/icons/doodle.png" width="160" height="160" alt="Doodle" data-icon-slide hidden>
+                <img class="hero-icon" src="../assets/icons/gold-shimmer.png" width="160" height="160" alt="Gold Shimmer" data-icon-slide hidden>
+                <img class="hero-icon" src="../assets/icons/dot-print.png" width="160" height="160" alt="Dot Print" data-icon-slide hidden>
+                <img class="hero-icon" src="../assets/icons/mosaic.svg" width="160" height="160" alt="Mosaic" data-icon-slide hidden>
+              </div>
+              <div class="hero-wordmark">
+                <h1 id="hero-title">PawTale</h1>
+                <p class="hero-slogan" lang="en">Keep it &amp; Watch it</p>
+              </div>
+            </div>
+            <div class="icon-controls" role="group" aria-label="App icons" hidden>
+              <button class="icon-pick" type="button" aria-label="Show the Kiwi Green icon" data-icon-pick="0" aria-current="true"></button>
+              <button class="icon-pick" type="button" aria-label="Show the Cream White icon" data-icon-pick="1"></button>
+              <button class="icon-pick" type="button" aria-label="Show the Doodle icon" data-icon-pick="2"></button>
+              <button class="icon-pick" type="button" aria-label="Show the Gold Shimmer icon" data-icon-pick="3"></button>
+              <button class="icon-pick" type="button" aria-label="Show the Dot Print icon" data-icon-pick="4"></button>
+              <button class="icon-pick" type="button" aria-label="Show the Mosaic icon" data-icon-pick="5"></button>
+              <button class="icon-toggle" type="button" data-icon-toggle data-pause="Pause rotation" data-play="Play rotation">Pause rotation</button>
+            </div>
+          </div>
           <p class="intro">Make a care plan, keep track of health, and save the everyday moments that make each pet yours.</p>
           <div class="hero-actions"><a class="button" href="#care">Explore PawTale</a><span>Coming to the App Store</span></div>
         </div>

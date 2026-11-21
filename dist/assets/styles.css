@@ -106,10 +106,32 @@ h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); letter-spacing: -.029em; }
   gap: clamp(1.8rem, 5.5vw, 6rem);
 }
 .hero-layout { grid-template-columns: minmax(0, 1.44fr) minmax(0, 1fr); padding-block: clamp(2.5rem, 6vw, 5rem); }
-.hero-identity { display: flex; align-items: center; gap: 1rem; margin-bottom: clamp(1.35rem, 3vw, 2.5rem); font-size: clamp(1.55rem, 2.5vw, 2.35rem); font-weight: 700; letter-spacing: -.04em; }
+.hero-identity {
+  display: grid;
+  grid-template-columns: clamp(4.25rem, 12vw, 10rem) minmax(0, 1fr);
+  gap: clamp(.8rem, 2.1vw, 1.85rem);
+  align-items: center;
+}
+.icon-slides { width: 100%; aspect-ratio: 1; }
+.icon-slides .hero-icon { width: 100%; height: 100%; object-fit: contain; }
+.icon-slides [hidden], .icon-controls[hidden] { display: none; }
+.hero-wordmark h1 { font-size: clamp(2.65rem, 7.1vw, 6.5rem); }
+.hero-slogan { margin-top: .22em; color: var(--muted); font-size: clamp(.95rem, 2.15vw, 1.85rem); white-space: nowrap; }
+.icon-controls { display: flex; flex-wrap: wrap; gap: .1rem; align-items: center; margin-top: .55rem; }
+.icon-pick, .icon-toggle {
+  appearance: none;
+  border: 0;
+  background: none;
+  color: var(--action);
+  cursor: pointer;
+  font: inherit;
+  font-variation-settings: inherit;
+}
+.icon-pick { display: grid; place-items: center; width: 24px; height: 44px; padding: 0; }
+.icon-pick::before { content: ""; width: 7px; height: 7px; border: 1px solid var(--action); border-radius: 50%; }
+.icon-pick[aria-current]::before, .icon-pick:hover::before { background: var(--action); }
+.icon-toggle { min-height: 44px; margin-inline-start: .32rem; padding-inline: .35rem; font-size: .875rem; text-decoration: underline; text-underline-offset: .22em; }
 .hero-icon { width: clamp(4.25rem, 8vw, 7.5rem); height: auto; }
-.hero h1 { font-size: clamp(2.7rem, 5.6vw, 5.3rem); }
-:lang(en) .hero h1 { max-width: 17ch; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; margin-top: 1.8rem; }
 .hero-actions span, .closing p { color: var(--muted); font-size: .95rem; }
 .hero-screen { width: min(100%, 20rem); justify-self: center; }
@@ -157,7 +179,6 @@ details p { padding: 0 0 .8rem 1.1rem; color: var(--muted); }
 
 @media (max-width: 57rem) {
   .stage { width: min(calc(100% - 3rem), 79rem); }
-  .hero h1 { font-size: clamp(2.7rem, 6.65vw, 4.4rem); }
   .hero-layout { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
   .chapter-layout, .pet-layout { gap: 2.5rem; }
 }
@@ -176,7 +197,6 @@ details p { padding: 0 0 .8rem 1.1rem; color: var(--muted); }
   .footer-layout { display: grid; gap: .25rem; }
 }
 @media (max-width: 22rem) {
-  .hero h1 { font-size: 2.4rem; }
   .header-layout nav, .footer-layout nav { gap: 0 .55rem; }
 }
 .figure-note { font-size: .875em; }
