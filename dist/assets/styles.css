@@ -114,23 +114,9 @@ h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); letter-spacing: -.029em; }
 }
 .icon-slides { width: 100%; aspect-ratio: 1; }
 .icon-slides .hero-icon { width: 100%; height: 100%; object-fit: contain; }
-.icon-slides [hidden], .icon-controls[hidden] { display: none; }
+.icon-slides [hidden] { display: none; }
 .hero-wordmark h1 { font-size: clamp(2.65rem, 7.1vw, 6.5rem); }
 .hero-slogan { margin-top: .22em; color: var(--muted); font-size: clamp(.95rem, 2.15vw, 1.85rem); white-space: nowrap; }
-.icon-controls { display: flex; flex-wrap: wrap; gap: .1rem; align-items: center; margin-top: .55rem; }
-.icon-pick, .icon-toggle {
-  appearance: none;
-  border: 0;
-  background: none;
-  color: var(--action);
-  cursor: pointer;
-  font: inherit;
-  font-variation-settings: inherit;
-}
-.icon-pick { display: grid; place-items: center; width: 24px; height: 44px; padding: 0; }
-.icon-pick::before { content: ""; width: 7px; height: 7px; border: 1px solid var(--action); border-radius: 50%; }
-.icon-pick[aria-current]::before, .icon-pick:hover::before { background: var(--action); }
-.icon-toggle { min-height: 44px; margin-inline-start: .32rem; padding-inline: .35rem; font-size: .875rem; text-decoration: underline; text-underline-offset: .22em; }
 .hero-icon { width: clamp(4.25rem, 8vw, 7.5rem); height: auto; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; margin-top: 1.8rem; }
 .hero-actions span, .closing p { color: var(--muted); font-size: .95rem; }
