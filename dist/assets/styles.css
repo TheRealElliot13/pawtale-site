@@ -1,7 +1,8 @@
 /* Hallmark · P4 H5 E5 S5 R5 V5 */
 @font-face {
   font-family: "Alimama FangYuanTi VF";
-  src: url("AlimamaFangYuanTiVF-Thin.ttf") format("truetype");
+  src: url("AlimamaFangYuanTiVF-Thin.woff2") format("woff2"),
+       url("AlimamaFangYuanTiVF-Thin.ttf") format("truetype");
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
