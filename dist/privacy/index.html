@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="了解 PawTale 的本地存储、照片与通知权限、备份及 iCloud 同步规划。">
+  <meta name="description" content="了解 PawTale 的本机存储、可选 iCloud 同步、系统权限，以及如何管理数据和备份。">
   <title>隐私政策 · PawTale</title>
   <link rel="alternate" hreflang="zh-Hans" href="../privacy/">
   <link rel="alternate" hreflang="en" href="../en/privacy/">
@@ -27,20 +27,24 @@
         <p class="intro">PawTale 无需注册账号。使用时创建的宠物档案、记录和选取的照片默认保存在当前设备。</p>
       </header>
       <div class="paper">
-        <section><h2>本机保存</h2>
-          <p>宠物档案、照护与健康记录、日程、相册、库存、账本、画布作品和应用偏好保存在本机。宠物档案可包含你主动填写的紧急联系人、医院名称或联系电话。当前版本没有 PawTale 账号或用于接收这些记录的开发者服务器。</p></section>
-        <section><h2>照片和相册权限</h2>
-          <p>为档案、记录、相册或画布选图时，PawTale 使用 iOS 照片选择器，仅访问你选中的照片，并在需要时把副本保存在 App 内。选择将画布作品保存到系统相册时，可能会请求仅添加照片的权限。你可以在 iOS 设置中管理已授予的权限。</p></section>
-        <section><h2>通知权限</h2>
-          <p>通知由设备本机安排，用于日程、用药、库存和纪念日。你可以在 iOS 设置中关闭通知或调整显示方式，仍可在 PawTale 查看日程。</p></section>
-        <section><h2>备份、分享和删除</h2>
-          <p>你可以在「设置 → 数据与备份」导出照护备份，自己决定保存位置或分享对象。备份可能包含照片、健康备注和联系人信息。手动保存到 iCloud Drive 或通过 iOS 系统备份保留副本时，相关文件由选用的服务及其设置管理。</p>
-          <p>你可以在 App 内编辑或删除记录。删除 App 会移除其本机容器中的数据。在系统相册、文件、备份服务或接收方保存的副本需要在对应位置另行处理。</p></section>
-        <section><h2>未来的 iCloud 同步</h2>
-          <p>当前版本未启用 App 内 iCloud 同步。规划中的同步用于同一 Apple 账户下的设备，预计通过 Apple 的 CloudKit 私有数据库处理照护记录和相关照片。若上线，本站会更新实际同步范围、启用和停止方式，以及如何管理云端副本。</p></section>
+        <section><h2>本机数据</h2>
+          <p>宠物档案、照护与健康记录、日程、相册、库存、账本、画布作品和应用偏好由 PawTale 存在设备上。紧急联系人、医院名称和联系电话由你手动填写。App 没有广告、跟踪或开发者运营的照护数据服务器。</p></section>
+        <section id="icloud"><h2>可选 iCloud 同步</h2>
+          <p>在「设置 → 数据与备份 → iCloud 同步」启用后，PawTale 将宠物档案、照护与健康记录、日程、库存和账本、相册及关联照片、铭牌样式和交接备注存入 Apple 的 CloudKit 私有数据库，供登录同一 Apple 账户的设备同步。记录中可能包含你填写的联系人、电话号码、就医备注或照片。PawTale 开发者无法通过 App 或后台读取你的私有同步内容。</p>
+          <p>同步快照还包含应用生成的设备标识、系统提供的设备名称或机型、设备类型和最近同步时间，用于显示已同步设备。画布作品、贴纸、界面偏好、系统权限和系统日历设置由各设备管理。</p>
+          <p>关闭「自动同步」后仍可手动同步。关闭「iCloud 同步」会停止该设备的同步，本机资料和已有云端副本都会保留。开启同步时删除记录，删除会在后续同步中反映到其他设备。与记录分开存储的照片附件可能继续留在 iCloud。PawTale 目前没有一键清除全部云端副本的入口。</p>
+          <p>如需清理云端副本，先在所有使用 PawTale 的设备上停用同步，再检查 Apple 账户的 iCloud 储存空间管理是否提供 PawTale 的数据删除选项。如需协助，可<a href="../contact/#privacy-requests">联系我们</a>。</p></section>
+        <section><h2>照片、相机、日历和通知</h2>
+          <p>照片选择器仅让 PawTale 访问你选中的照片。拍照和扫描资料需要相机权限，保存作品到系统相册可能需要仅添加照片的权限。启用系统日历联动后，PawTale 经授权将选定日程单向写入 PawTale 专用日历，副本由你选择的日历账户管理。</p>
+          <p>照护提醒由设备安排，iCloud 可发送后台同步通知。桌面小组件读取设备内共享的照护摘要，可在主屏幕显示照护、库存或账本信息。你可在 iOS 设置中管理系统权限，也可随时移除小组件。</p></section>
+        <section><h2>备份、分享和保留</h2>
+          <p>你可在「设置 → 数据与备份」导出照护记录和关联照片，并自行选择保存位置或接收方。备份可能包含宠物健康备注、照片和联系人。同步开启前或处理同步冲突时，PawTale 也可能在设备内保留恢复备份。</p>
+          <p>你可在 App 内编辑或删除记录。卸载 App 会移除本机 App 容器中的数据。iCloud 同步副本、日历事件、系统备份、相册或文件中的导出和接收方保存的副本需在对应位置管理。</p></section>
+        <section><h2>App Store 购买</h2>
+          <p>如果你发起 App Store 购买，Apple 处理支付。PawTale 使用 StoreKit 读取交易与订阅状态，以显示和恢复购买；App 不接收银行卡资料。</p></section>
         <section><h2>网站访问和支持邮件</h2>
-          <p>本站托管于 GitHub Pages。GitHub 可能记录访问者 IP 地址用于安全目的。本站未嵌入第三方统计、广告或反馈表单。你主动发送的支持邮件会包含你的邮箱地址、邮件正文和所附资料，用于处理和回复反馈。如需查询或请求删除你发来的支持资料，请通过联系我们页面来信。</p>
-          <p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages 的数据说明</a> · <a href="../contact/">联系我们</a></p></section>
+          <p>本站托管于 GitHub Pages。GitHub 可能为安全目的记录访问者 IP 地址。本站未嵌入第三方统计、广告或反馈表单。你主动来信时，我们使用邮箱地址、邮件正文和所附资料处理请求，并按处理支持及必要的后续沟通所需保留。要查询、更正或申请删除你发来的支持资料，请通过联系页来信。</p>
+          <p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages 的数据说明</a> · <a href="../contact/#privacy-requests">隐私与数据请求</a></p></section>
       </div>
     </article>
   </main>

@@ -39,12 +39,14 @@
         </section>
         <section id="faq">
           <h2>常见问题</h2>
-          <details><summary>需要注册吗？两台设备会自动同步吗？</summary><p>无需注册。当前版本的数据保存在本机。换机时可以用手动备份迁移照护数据。</p></details>
+          <details><summary>需要注册吗？两台设备如何同步？</summary><p>无需注册 PawTale 账号。默认在本机使用。要在两台设备间同步，先登录同一个 Apple 账户，再分别在「设置 → 数据与备份 → iCloud 同步」启用同步。关闭自动同步时可点按「立即同步」。换机也可用手动备份迁移照护记录。</p></details>
+          <details><summary>关闭 iCloud 同步会怎样？</summary><p>关闭 iCloud 同步会停止本机同步，并保留已有本机与云端副本。画布、贴纸和偏好由各设备管理。有关云端附件和删除副本的信息，请查看<a href="../privacy/#icloud">隐私政策的 iCloud 同步说明</a>。</p></details>
           <details><summary>备份里有什么？导入会覆盖现有记录吗？</summary><p>完整备份包含宠物档案、照护记录、提醒、账本、相册及相关照片。画布作品和贴纸库单独保存在设备上。导入会按记录 ID 跳过完全相同的项目，并在检测到同 ID 内容冲突时提示处理。</p></details>
           <details><summary>为什么看不到整个照片图库的授权？</summary><p>PawTale 使用系统照片选择器，只能读取你主动选中的照片。从画布保存作品到系统相册时，有可能需要单独允许添加照片。</p></details>
         </section>
         <section id="troubleshooting">
           <h2>故障排查</h2>
+          <details><summary>两台设备的数据没有更新</summary><p>检查两台设备是否使用同一个 Apple 账户、iCloud 同步是否开启、网络和 iCloud 储存空间是否可用。关闭正在编辑的页面，再点按「立即同步」。如仍有问题，可以在 iCloud 同步页的「高级诊断」运行检查，只把相关提示提供给支持人员。</p></details>
           <details><summary>收不到提醒</summary><p>先检查日程是否启用了通知且时间正确，再到「设置 → 隐私与安全 → 系统权限」查看授权。如果系统已允许，检查 iOS 专注模式、通知摘要和 PawTale 的通知显示设置。</p></details>
           <details><summary>无法导入备份</summary><p>使用「导出完整备份」生成的 ZIP 或完整 v2 JSON。旧 v1 JSON、CSV 和单宠档案分享文件不支持恢复。如果文件存放在云端，先在「文件」中确认下载完成。若预览提示冲突，请保留原备份及现有记录，并带上提示文字联系支持。</p></details>
           <details><summary>画布图片保存不到相册</summary><p>在画布分享菜单中选择保存到相册，再到 iOS 设置检查 PawTale 的照片添加权限。也可以从分享菜单把作品另存到「文件」。</p></details>
